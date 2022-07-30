@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.35286bc4.css",
-    "main.js": "/portfolio/static/js/main.f82ed46e.js",
+    "main.css": "/portfolio/static/css/main.026a5b96.css",
+    "main.js": "/portfolio/static/js/main.0454d254.js",
     "static/js/787.88012170.chunk.js": "/portfolio/static/js/787.88012170.chunk.js",
+    "static/media/paradisu.jpg": "/portfolio/static/media/paradisu.acf7abf7ce1154d76d21.jpg",
+    "static/media/Paradisulogo.png": "/portfolio/static/media/Paradisulogo.6ef6fc7162926897c7de.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.35286bc4.css.map": "/portfolio/static/css/main.35286bc4.css.map",
-    "main.f82ed46e.js.map": "/portfolio/static/js/main.f82ed46e.js.map",
+    "main.026a5b96.css.map": "/portfolio/static/css/main.026a5b96.css.map",
+    "main.0454d254.js.map": "/portfolio/static/js/main.0454d254.js.map",
     "787.88012170.chunk.js.map": "/portfolio/static/js/787.88012170.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35286bc4.css",
-    "static/js/main.f82ed46e.js"
+    "static/css/main.026a5b96.css",
+    "static/js/main.0454d254.js"
   ]
 }
