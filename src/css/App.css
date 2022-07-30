@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #3d465a;
 }
 
 .App-link {
@@ -29,4 +29,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card{
+  @apply max-w-sm  rounded-md p-4 drop-shadow-xl
 }
