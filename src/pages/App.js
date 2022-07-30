@@ -1,6 +1,5 @@
 import logo from '../logo.svg';
 import '../css/App.css';
-import TextAnimation from '../components/animations/TextAnimation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
@@ -9,7 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faUniversity } from '@fortawesome/free-solid-svg-icons';
 import TypeAnimation from 'react-type-animation'; 
-
+import ProjectCard from '../components/ProjectCard';
 
 function App() {
   return (
@@ -99,8 +98,8 @@ function App() {
       <section id="projects" className="text-base  text-left flex w-full justify-center text-slate-800">
         <div className="flex max-w-7xl w-full justify-start text-left m-[4rem] mt-0 flex-col">
           <h1 className="text-3xl font-bold">Projects</h1>
-          <div id="cards" className="flex flex-wrap justify-items-stretch flex-grow w-full relative mx-[-1rem]">
-              <div id="paradisu" className="card">
+          <div id="cards" className="flex flex-wrap justify-items-stretch flex-grow w-full relative mx-[-0.5rem]">
+              {/* <div id="paradisu" className="card">
                 <div className="bg-slate-50 rounded-md">
                   <div className="card-image">
                     <figure className="image">
@@ -121,7 +120,31 @@ function App() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <ProjectCard 
+                name="Paradisu"
+                slogan="Recreating themeparks virtually."
+                image="/images/paradisu.jpg"
+                logo="/images/paradisulogo.png"
+                links={[
+                  {"name": "GitHub", "url": "https://github.com/Paradisu/ParadisuPlugin"},
+                  {"name": "Website", "url": "https://paradisu.net"}
+                ]}
+                description="Paradisu is a hobby Minecraft server that aims to make accurate recreations of real-world themeparks. ParadisuPlugin was developed to provide custom functionality beyond Minecraft's standard feature set. "
+              />
+
+              <ProjectCard 
+                name="Codology"
+                slogan="By techies, for techies."
+                image="/images/codology.jpg"
+                logo="/images/codologylogo.png"
+                links={[
+                  {"name": "Website", "url": "https://codology.org"},
+                  {"name": "GitHub", "url": "https://github.com/codologyorg"}
+                ]}
+                description={"Codology offers free, hands-on computer science courses for aspiring young adults. At Codology, each program consists of unique activities and topics, so students have something different to explore in every course. Classes are also curated for different age groups and skill levels, so every lesson offers the proper level of engagement. On top of that, students are able to learn from the comfort of home and engage in a variety of activities with easy-to-get materials. Sign up your child for free courses today!"}
+              />
+
           </div>
         </div>
       </section>

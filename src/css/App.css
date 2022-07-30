@@ -32,5 +32,5 @@
 }
 
 .card{
-  @apply max-w-sm  rounded-md p-4 drop-shadow-xl
+  @apply max-w-sm  rounded-md p-2 drop-shadow-xl pt-4
 }
