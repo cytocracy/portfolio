@@ -5,20 +5,20 @@ const ProjectCard = (props) => {
 
 
     return (
-        <div id={name} className="card min-w-[15rem]">
-            <div className="bg-slate-50 rounded-md max-w-[22rem]">
-                <div className="card-image">
+        <div id={name} className="card xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-full">
+            <div className="bg-slate-50 rounded-md">
+                {image && <div className="card-image">
                     <figure className="image">
-                        <img src={process.env.PUBLIC_URL + image} className="rounded-t-md" alt={name} />
+                        <img src={process.env.PUBLIC_URL + image} className="rounded-t-md aspect-video" alt={name} />
                     </figure>
-                </div>
+                </div>}
                 <div className="card-content">
-                    <div className="flex p-5 items-center shrink-0">
-                        <div className="mr-3 shrink-0">
+                    <div className="flex p-5 items-center">
+                        {logo && <div className="mr-3 shrink-0">
                             <figure className="logo">
                                 <img src={process.env.PUBLIC_URL + logo} className="rounded-full w-10" alt={`${name} Logo`} />
                             </figure>
-                        </div>
+                        </div>}
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold">{name}</p>
                             <p className="text-md">{slogan}</p>
@@ -29,8 +29,8 @@ const ProjectCard = (props) => {
                         {links.map((link, index) => {
                             let classes = (index < links.length - 1) ? "border-r-[1px] border-r-neutral-300" : "";
                             return (
-                                <div className={classes + " " + "border-t-[1px] border-t-neutral-300 wrapper grow flex items-center justify-center"}>
-                                    <a href={link.url} key={index} className={"button text-sm text-slate-800 grow hover:text-slate-600"}>
+                                <div key={link.name} className={classes + " " + "border-t-[1px] border-t-neutral-300 wrapper grow flex items-center justify-center"}>
+                                    <a href={link.url} key={index} className={"button text-sm text-slate-800 text-center text flex items-center justify-center h-full w-full hover:text-slate-600"}>
                                         {link.name}
                                     </a>
                                 </div>
