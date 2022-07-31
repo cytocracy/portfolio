@@ -1,7 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectCard = (props) => {
-    let { name, slogan, image, logo, description, links } = props;
+    let { name, slogan, image, logo, description, links, languages } = props;
 
 
     return (
@@ -23,6 +24,16 @@ const ProjectCard = (props) => {
                             <p className="text-2xl font-bold">{name}</p>
                             <p className="text-md">{slogan}</p>
                         </div>
+                        {languages && <div className="flex flex-col self-start align-top ml-auto">
+                            {languages.map((language, index) => {
+                                return (
+                                    <span key={index} className="icon ml-1">
+                                        <FontAwesomeIcon icon={language} />
+                                    </span>
+                                )
+
+                            }, this)}
+                        </div>}
                     </div>
                     <div className="p-5 pt-0 text-sm">{description}</div>
                     <footer className="buttons flex  grow h-10  text-center w-full justify-items-stretch items-stretch">

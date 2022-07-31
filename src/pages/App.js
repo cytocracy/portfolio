@@ -9,6 +9,13 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faUniversity } from '@fortawesome/free-solid-svg-icons';
 import TypeAnimation from 'react-type-animation'; 
 import ProjectCard from '../components/ProjectCard';
+import { faPython } from '@fortawesome/free-brands-svg-icons';
+import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faJava } from '@fortawesome/free-brands-svg-icons';
+ 
 
 function App() {
   return (
@@ -104,6 +111,9 @@ function App() {
                 slogan="Recreating themeparks virtually."
                 image="/images/paradisu.jpg"
                 logo="/images/paradisulogo.png"
+                languages={[
+                  faJava,
+                ]}
                 links={[
                   {"name": "GitHub", "url": "https://github.com/Paradisu/ParadisuPlugin"},
                   {"name": "Website", "url": "https://paradisu.net"}
@@ -116,6 +126,10 @@ function App() {
                 slogan="By techies, for techies."
                 image="/images/codology.jpg"
                 logo="/images/codologylogo.png"
+                languages={[
+                  faPython,
+                  faSquareJs
+                ]}
                 links={[
                   {"name": "Website", "url": "https://codology.org"},
                   {"name": "GitHub", "url": "https://github.com/codologyorg"}
@@ -128,6 +142,10 @@ function App() {
                 slogan="Song requests made fun."
                 // image="/images/requestlove.png"
                 logo="/images/requestlovelogo.png"
+                languages={[
+                  faReact,
+                  faPython
+                ]}
                 links={[
                   {"name": "Website", "url": "https://request.love"},
                 ]}
