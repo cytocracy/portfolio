@@ -89,7 +89,7 @@ function App() {
           <h1 className="text-3xl font-bold">About Me</h1>
           <p className="mt-2">I'm a current high school student with an interest in computer science and a love for learning.</p>
           <p className="">Some things I'd like to learn more about are machine learning, game development, and data science.</p>
-          <p className="">In my free time, I play videogames with friends, learn to play songs on piano and trumpet, design ights for theatre, and build cool robots.</p>
+          <p className="">In my free time, I play videogames with friends, learn to play songs on piano and trumpet, design lights for theatre, and build cool robots.</p>
           <p>Please feel free to reach out to me at any of the socials linked above (though I'll probably respond quickest on discord). I am always open to trying new things, and would love to help you out with whatever new thing you are building.</p>
           
         </div>
