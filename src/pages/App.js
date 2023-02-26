@@ -15,7 +15,8 @@ import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faJava } from '@fortawesome/free-brands-svg-icons';
- 
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faC } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -82,7 +83,7 @@ function App() {
                 <span className="icon mr-1">
                   <FontAwesomeIcon icon={faUniversity} />
                 </span>
-                <span>Sacred Heart Prep '24</span>
+                <span>High School '24</span>
               </span>
             </div>
           </div>
@@ -106,6 +107,64 @@ function App() {
         <div className="flex max-w-7xl w-full justify-start text-left  mt-0 flex-col m-[2rem] md:m-[4rem] md:mt-0">
           <h1 className="text-3xl font-bold">Projects</h1>
           <div id="cards" className="flex flex-wrap justify-items-stretch flex-grow w-full relative mx-[-0.5rem]">
+              <ProjectCard 
+                name="Advent of Code"
+                slogan="Advent coding puzzle solutions."
+                image="/images/aoc.png"
+                // logo="/images/aoclogo.png"
+                languages={[
+                  faPython,
+                  faJava,
+                ]}
+                links={[{"name": "GitHub", "url": "https://github.com/cytocracy/AdventOfCode2022"}]}
+                description="My solutions to the Advent of Code 2022 puzzles. Top placement was 105th global on day 4, so close to leaderboarddddd :')"
+              />
+              <ProjectCard 
+                name="NxS"
+                slogan="Sync schoology with notion."
+                image="/images/notion.png"
+                logo="/images/sn.png"
+                languages={[
+                  faPython,
+                  
+                ]}
+                links={[{"name": "GitHub", "url": "https://github.com/cytocracy/Notion-Schoology-Public"}]}
+                description="A program that imports all schoology assignments into a Notion database and keeps them in sync so you never have to touch Schoology again (ew). Currently in use, running on a cron job every minute and it has worked great for me so far."
+
+              />
+              <ProjectCard 
+                name="Rehearsal Notifier"
+                slogan="Never send a rehersal call again."
+                image = "/images/email.png"
+                languages={[
+                  faPython,
+                ]}
+                links={[{"name": "GitHub", "url": "https://github.com/cytocracy/notion-email"}]}
+                description="A program that sends an email to all cast members of a show of the rehearsal call for the next day. Currently in use by my school's theatre department."
+              />
+              <ProjectCard
+                name="ATCS"
+                slogan="Essentially a data structures course"
+                image="/images/atcs.png"
+                logo="/images/cpp.png"
+                languages={[
+                  faC,
+
+                ]}
+                links={[{"name": "GitHub", "url": "https://github.com/cytocracy/ATCS"}]}
+                description="Coursework and projects from my Advanced Topics in Computer Science class. Taught in C++, I learned about data structures, algorithms, file compression, graph theory, machine learning, and more."
+              />
+              <ProjectCard
+                name="ChessClub"
+                slogan="Lichess rating tracker"
+                logo="/images/clublogo.png"
+                languages={[
+                  faSquareJs,
+                  faGoogle,
+                ]}
+                links={[{"name": "GitHub", "url": "https://github.com/cytocracy/chessclub/"}]}
+                description="A web app that uses Google's graphing API to plot users' lichess ratings over time. Fun competition for my chess club."
+              />
               <ProjectCard 
                 name="Paradisu"
                 slogan="Recreating themeparks virtually."
