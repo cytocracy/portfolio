@@ -206,19 +206,19 @@ function App() {
                   faPython
                 ]}
                 links={[
-                  {"name": "Website", "url": "https://request.love"},
+                  {"name": "*coming soon*", "url": "https://youtu.be/xvFZjo5PgG0"},
                 ]}
                 description={"Request Love is a product that aims to increase tip revenue for cover bands by giving fans the chance to request a song by leaving a tip. With a leaderboard for the top donations and public display of all song requests, Request Love keeps shows entertaining for fans and profitable for bands."}
               />
 
-              <ProjectCard 
+              {/* <ProjectCard 
                 name="LightLab"
                 slogan="*Cue Jeopardy theme*"
                 description="In progress, check back for updates."
                 links={[
                   {"name": "GitHub", "url": "https://github.com/cytocracy/LightLab"},
                 ]}
-              />
+              /> */}
           </div>
         </div>
       </section>
