@@ -206,7 +206,7 @@ function App() {
                   faPython
                 ]}
                 links={[
-                  {"name": "*coming soon*", "url": "https://youtu.be/xvFZjo5PgG0"},
+                  {"name": "*coming soon*", "url": "https://request.love"},
                 ]}
                 description={"Request Love is a product that aims to increase tip revenue for cover bands by giving fans the chance to request a song by leaving a tip. With a leaderboard for the top donations and public display of all song requests, Request Love keeps shows entertaining for fans and profitable for bands."}
               />
