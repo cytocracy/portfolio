@@ -200,7 +200,7 @@ function App() {
                 name="Request Love"
                 slogan="Song requests made fun."
                 // image="/images/requestlove.png"
-                logo="/images/requestlovelogo.png"
+                logo="/images/rllogo2.png"
                 languages={[
                   faReact,
                   faPython
