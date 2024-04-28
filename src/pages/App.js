@@ -83,7 +83,7 @@ function App() {
                 <span className="icon mr-1">
                   <FontAwesomeIcon icon={faUniversity} />
                 </span>
-                <span>High School '24</span>
+                <span>Berkeley EE/CS '28</span>
               </span>
             </div>
           </div>
