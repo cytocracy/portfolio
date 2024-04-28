@@ -48,14 +48,14 @@ function App() {
                 </span>
               </a>
               <button id="discord" onClick={() => {
-                navigator.clipboard.writeText('cyto#7288');
+                navigator.clipboard.writeText('cytocracy');
               }}>
                 <span className="mr-3 group">
                   <span className="icon mr-1 relative">
                     <FontAwesomeIcon id="disc-icon" className="icon-default duration-200 group-hover:-translate-y-4 group-hover:opacity-0 ease-in-out" icon={faDiscord} />
                     <FontAwesomeIcon id="disc-icon-copy" className="opacity-0 group-hover:opacity-100 ease-in-out duration-200 icon-hover absolute left-0 translate-y-4 group-hover:translate-y-1" icon={faCopy} />
                   </span>
-                  <span className="text-left">cyto#7288</span>
+                  <span className="text-left">cytocracy</span>
                 </span>
               </button>
               <a href="mailto:theop.parker@gmail.com" target="_blank">
